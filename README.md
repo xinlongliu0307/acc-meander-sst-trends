@@ -81,7 +81,6 @@ acc-meander-sst-trends/
 │       └── table_s2_detailed_stats.csv
 │
 ├── manuscript/
-│   ├── manuscript.tex
 │   └── table_s1_control_regions.tex
 │
 └── logs/                       # PBS job output logs (for reproducibility)
