@@ -1,0 +1,18 @@
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:103: RuntimeWarning: invalid value encountered in sqrt
+  z = (s + 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:99: RuntimeWarning: invalid value encountered in sqrt
+  z = (s - 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/statsmodels/tsa/stattools.py:702: RuntimeWarning: invalid value encountered in divide
+  acf = avf[: nlags + 1] / avf[0]
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:99: RuntimeWarning: invalid value encountered in sqrt
+  z = (s - 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:103: RuntimeWarning: invalid value encountered in sqrt
+  z = (s + 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:99: RuntimeWarning: invalid value encountered in sqrt
+  z = (s - 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:103: RuntimeWarning: invalid value encountered in sqrt
+  z = (s + 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:99: RuntimeWarning: invalid value encountered in sqrt
+  z = (s - 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:103: RuntimeWarning: invalid value encountered in sqrt
+  z = (s + 1)/np.sqrt(var_s)

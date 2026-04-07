@@ -1,0 +1,119 @@
+{
+  "project": "GRL Meander SST Trends",
+  "base_dir": "/g/data/gv90/xl1657/cmems_adt",
+  "project_dir": "/g/data/gv90/xl1657/cmems_adt/meander_sst_project",
+  "belt_file": "/g/data/gv90/xl1657/cmems_adt/circumpolar_belt_rel20_x3m.nc",
+  "adt_grid": {
+    "lat_range": [
+      -89.9375,
+      -30.0625
+    ],
+    "lon_range": [
+      -179.9375,
+      179.9375
+    ],
+    "spacing_deg": 0.125,
+    "nlat": 480,
+    "nlon": 2880
+  },
+  "sites": {
+    "CP": {
+      "name": "Campbell Plateau",
+      "inner_lon": [
+        150,
+        -150
+      ],
+      "inner_lat": [
+        -57,
+        -46
+      ],
+      "wraps": true
+    },
+    "PAR": {
+      "name": "Pacific-Antarctic Ridge",
+      "inner_lon": [
+        -150,
+        -80
+      ],
+      "inner_lat": [
+        -60,
+        -48
+      ],
+      "wraps": false
+    },
+    "SEIR": {
+      "name": "Southeast Indian Ridge",
+      "inner_lon": [
+        130,
+        152
+      ],
+      "inner_lat": [
+        -56,
+        -44
+      ],
+      "wraps": false
+    },
+    "SWIR": {
+      "name": "Southwest Indian Ridge",
+      "inner_lon": [
+        15,
+        45
+      ],
+      "inner_lat": [
+        -58,
+        -44
+      ],
+      "wraps": false
+    }
+  },
+  "controls": {
+    "CTRL_SE_PAC": {
+      "name": "SE Pacific (quiescent)",
+      "lon": [
+        -100,
+        -80
+      ],
+      "lat": [
+        -60,
+        -48
+      ],
+      "wraps": false
+    },
+    "CTRL_S_IND": {
+      "name": "Central S Indian (quiescent)",
+      "lon": [
+        90,
+        110
+      ],
+      "lat": [
+        -56,
+        -44
+      ],
+      "wraps": false
+    },
+    "CTRL_S_ATL": {
+      "name": "S Atlantic (quiescent)",
+      "lon": [
+        10,
+        -10
+      ],
+      "lat": [
+        -58,
+        -44
+      ],
+      "wraps": true
+    },
+    "CTRL_CP_SEIR": {
+      "name": "Between CP and SEIR (quiescent)",
+      "lon": [
+        -180,
+        -165
+      ],
+      "lat": [
+        -57,
+        -46
+      ],
+      "wraps": false
+    }
+  }
+}

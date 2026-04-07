@@ -1,0 +1,359 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GRL Manuscript: Meander-Scale SST Trends (Liu \& Yang)
+% Target: Geophysical Research Letters
+% Template: AGU Journal Template (agujournal2019)
+% Status: DRAFT — numerical placeholders marked [XX] pending analysis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[draft]{agujournal2019}
+\usepackage{url}
+\usepackage{lineno}
+\usepackage[inline]{trackchanges}
+\usepackage{soul}
+\linenumbers
+
+\draftfalse
+
+\journalname{Geophysical Research Letters}
+
+
+\begin{document}
+
+%% TITLE
+\title{Topographic Hotspots Shape the Spatial Pattern of Southern Ocean SST Trends: Satellite Evidence from ACC Standing Meanders}
+
+
+
+%% AUTHORS
+\authors{Xinlong Liu\affil{1,2}\thanks{Currently at the Institute for Marine and Antarctic Studies, University of Tasmania, Private Bag 129, Hobart, TAS, Australia}
+}
+
+\affiliation{1}{Institute for Marine and Antarctic Studies, University of Tasmania, nipaluna / Hobart, Australia}
+
+\affiliation{2}{Australian Antarctic Program Partnership, Institute for Marine and Antarctic Studies, University of Tasmania, nipaluna / Hobart, Australia}
+
+\correspondingauthor{Xinlong Liu}{xinlong.liu@utas.edu.au}
+
+
+
+%% KEY POINTS (each must be a complete sentence, <= 140 characters, no special characters)
+\begin{keypoints}
+
+\item SST trends at ACC standing meander sites differ systematically from trends in quiescent sections of the current
+
+\item Meander sites with stronger eddy kinetic energy increases show [XX] SST trend anomalies relative to the circumpolar mean
+
+\item Topographic modulation of SST trends provides observational support for the eddy-mediated cooling mechanism
+
+\end{keypoints}
+
+
+
+%% ABSTRACT
+\begin{abstract}
+
+The Southern Ocean ``warming hole''---the anomalous surface cooling observed during the satellite era despite increasing greenhouse gas concentrations---has been attributed to eddy-mediated heat transport across Antarctic Circumpolar Current (ACC) fronts.
+However, no observational study has tested whether this mechanism leaves a spatial fingerprint at the scale of individual ACC standing meanders.
+Here, we co-locate satellite-era sea surface temperature (SST) trends (1993--2025) with structural trends of ACC standing meanders at four major topographic hotspots: the Campbell Plateau, Pacific-Antarctic Ridge, Southeast Indian Ridge, and Southwest Indian Ridge.
+We find that SST trends at meander sites differ significantly from those in quiescent ACC sections ($p < [XX]$), with the [XX] pronounced anomalies concentrated downstream of topographic features where eddy kinetic energy trends are strongest.
+A circumpolar transect of SST trends along the ACC axis reveals systematic modulation at topographic features, with [XX] at meander sites relative to the circumpolar mean.
+These results provide the first meander-scale observational constraint for eddy-resolving climate models and demonstrate that the spatial architecture of Southern Ocean temperature change is governed by the evolving dynamics of ACC standing meanders.
+
+\end{abstract}
+
+
+
+%% PLAIN LANGUAGE SUMMARY
+\section*{Plain Language Summary}
+
+The Southern Ocean around Antarctica has been cooling at the surface despite the planet warming overall---a persistent puzzle that most climate models fail to reproduce.
+Recent work with high-resolution models suggests that ocean eddies, swirling currents tens of kilometres across, play a key role by transporting heat across the strong currents of the Antarctic Circumpolar Current (ACC).
+These eddies are most active where the ACC flows over large underwater ridges and plateaus, producing persistent wave-like deflections called ``standing meanders.''
+We use 32 years of satellite observations to ask whether these specific locations show distinctive temperature trends compared to stretches of the ACC that flow over flat seafloor.
+We find that they do: the meander sites show [XX] temperature trends that differ systematically from the rest of the current.
+This is the first time anyone has linked the observed fine-scale structure of Southern Ocean temperature change to the locations of ACC standing meanders, providing a new observational benchmark for climate models.
+
+
+
+
+%% ========================================================================
+%% INTRODUCTION
+%% ========================================================================
+\section{Introduction}
+
+The Southern Ocean exerts a disproportionate influence on the global climate by absorbing approximately 70\% of anthropogenic heat uptake \cite{frolicher2015dominance} and driving the upwelling of deep waters that ventilate the global ocean interior \cite{marshall2012closure,morrison2015upwelling}.
+Its dominant circulation feature, the Antarctic Circumpolar Current (ACC), links the Atlantic, Indian, and Pacific basins and carries approximately 170~Sv of water eastward \cite{donohue2016mean}.
+The ACC is composed of sharp fronts that suppress meridional exchange of heat and tracers \cite{naveira2011eddy, chapman2017isopycnal}, yet observations reveal that cross-frontal transport is not uniformly distributed but concentrated at a small number of topographic hotspots where the current interacts with major bathymetric features \cite{thompson2012jets, foppert2017eddy}.
+
+
+Despite the global warming trend, satellite-era observations reveal pronounced surface cooling in the Southern Ocean---a feature termed the ``warming hole''---that is contrary to the warming simulated by most CMIP-class (CMIP: Coupled Model Intercomparison Project) climate models \cite{wills2022systematic, kang2026km}.
+\citeA{kang2026km} recently demonstrated that the ICON (ICOsahedral Non-hydrostatic) coupled model, operating at 5~km ocean and 10~km atmosphere resolution, reproduces the observed Southern Ocean cooling with remarkable fidelity.
+The mechanism they identify depends critically on the explicit representation of mesoscale eddy heat transport across ACC fronts: resolved eddies reduce poleward heat flux, enhanced Ekman overturning expands polar water outcropping, and a northward shift of the ACC exports excess heat to other basins.
+This mechanism implies that the locations where eddies are most active---the standing meander sites downstream of major topographic features---should play a central role in shaping the spatial pattern of Southern Ocean SST trends.
+
+
+Standing meanders are topographically constrained deflections of the ACC that persist on seasonal to decadal timescales and are distinct from transient mesoscale eddies \cite{chapman2017new,chapman2020defining}.
+They are recognised as dynamical hotspots where upwelling \cite{dove2021observational, yung2022topographic}, subduction \cite{dove2022enhanced}, cross-frontal exchange \cite{langlais2011variability,thompson2012jets}, and eddy energy \cite{chapman2015dynamics, foppert2017eddy} are all enhanced.
+\citeA{foppert2017eddy} identified eight topographic hotspots of elevated eddy heat flux along the ACC, showing that just a few locations account for a disproportionate fraction of the total cross-frontal heat transport.
+Observational analyses have documented multi-decadal structural trends in ACC standing meanders, including systematic widening, acceleration, and positional shifts at the Campbell Plateau \cite{liu2024characteristics} and the Pacific-Antarctic Ridge \cite{liu2026standing}, as well as at the Agulhas-Kerguelen standing meander.
+At the basin scale, eddy kinetic energy (EKE) in the Southern Ocean has increased over the satellite record \cite{hogg2015recent, martinez2021global, zhang2021regional}, with the strongest signals concentrated downstream of major topographic features.
+
+
+Two parallel literature threads have emerged.
+The first documents the structural evolution of ACC standing meanders from satellite altimetry but does not examine SST.
+The second investigates the Southern Ocean warming hole and the eddy-mediated cooling mechanism but treats the signal as largely zonally uniform.
+No published study has co-located satellite-era structural trends of ACC standing meanders with SST trend patterns at the same topographic hotspots.
+This gap is consequential: if the eddy-mediated mechanism proposed by \citeA{kang2026km} operates primarily at standing meander sites, then the SST trend field should carry a meander-scale spatial fingerprint that could serve as an observational benchmark for eddy-resolving climate models.
+
+
+Here, we test this hypothesis by combining 32 years of satellite SST observations (1993--2025) with the meander structural trend products derived from the satellite altimetry record at four major ACC topographic hotspots.
+We compare SST trends at meander sites against quiescent ACC sections and examine whether spatial patterns of EKE trends co-vary with SST trend anomalies.
+
+
+
+
+
+%% ========================================================================
+%% DATA AND METHODS
+%% ========================================================================
+\section{Data and Methods}
+
+\subsection{Satellite Altimetry Data and Derived Meander Products}
+
+We use the CMEMS DUACS L4 absolute dynamic topography (ADT) and surface geostrophic velocity data at 0.125$^{\circ}$ daily resolution (DT-2024 reprocessing) covering January 1993 to August 2025 \cite{cmems_quid2025} for the full Southern Ocean domain (90$^{\circ}$S--30$^{\circ}$S).
+Monthly meander positions, widths, geostrophic current speeds, and EKE were derived from this dataset at four standing meander sites: the Campbell Plateau (CP), Pacific-Antarctic Ridge (PAR), Southeast Indian Ridge (SEIR), and Southwest Indian Ridge (SWIR), using the local gradient maxima method described in \citeA{liu2024characteristics} and \citeA{liu2026standing}.
+The meander detection methodology, trend computation, and threshold sensitivity results are documented in the companion manuscript by \citeA{liu2026standing}.
+
+
+Per-grid-point EKE anomaly fields were computed as $\mathrm{EKE} = \frac{1}{2}(u'^{2} + v'^{2})$, where $u'$ and $v'$ are monthly geostrophic velocity anomalies at each grid point relative to the monthly climatology.
+Trend magnitudes were estimated using Sen's slope estimator \cite{sen1968estimates}, and significance was assessed using the Mann-Kendall test \cite{mann1945nonparametric}, with the Hamed and Rao modification \cite{hamed1998modified} applied when the lag-1 autocorrelation exceeded 0.1.
+
+
+\subsection{SST Datasets}
+
+The primary SST dataset is the CMEMS OSTIA Sea Surface Temperature Reprocessed product (SST\_GLO\_SST\_L4\_REP\_OBSERVATIONS\_010\_011; \citeA{good2020cmems}), which provides daily SST fields at 0.05$^{\circ}$ resolution from 1982 to present, incorporating multi-sensor input including microwave radiometry.
+To ensure spatial co-location with the altimetry-derived meander products, the OSTIA SST was conservatively regridded onto the 0.125$^{\circ}$ ADT grid.
+As a cross-check, we repeated all analyses using the NOAA OISST v2.1 dataset at 0.25$^{\circ}$ daily resolution (\citeA{huang2021improvements}; Supporting Information).
+
+
+\subsection{SST Trend Computation}
+
+Monthly SST climatologies and anomalies were computed at each grid point over the 1993--2025 period.
+Linear trends in monthly SST anomalies were estimated using the same Sen's slope and Mann-Kendall framework applied to the altimetry-derived metrics, ensuring methodological consistency across all variables.
+
+
+\subsection{Meander Envelope and Control Region Definitions}
+
+Meander envelope masks were constructed from the circumpolar meander position record: at each longitude, the envelope is defined as the region between the most extreme northward and southward monthly meander positions across the full 1993--2025 record.
+Four quiescent ACC control regions were defined at longitudes not associated with major topographic features or standing meanders (Table~S1 in Supporting Information), each spanning a comparable latitude band to the ACC core.
+SST trend distributions were extracted separately for each meander site and each control region to enable formal statistical comparison.
+
+
+\subsection{Joint Analysis}
+
+At each meander site, we computed the spatial correlation between per-grid-point EKE trends and SST trends.
+A circumpolar SST trend transect was constructed by extracting the SST trend along the time-mean ACC axis at each longitude, enabling visual and quantitative assessment of topographic modulation.
+The statistical significance of the difference between meander and control SST trend distributions was assessed using a two-sample Kolmogorov-Smirnov test.
+
+
+
+
+
+%% ========================================================================
+%% RESULTS
+%% ========================================================================
+\section{Results}
+
+\subsection{Circumpolar SST Trends and Topographic Modulation}
+
+The spatial map of SST trends over 1993--2025 reveals a heterogeneous pattern across the Southern Ocean (Figure~1a).
+[XX: Describe the overall pattern---likely a mix of cooling and warming with spatial heterogeneity.]
+An along-ACC transect of SST trends, extracted at the time-mean meander centre latitude at each longitude, shows systematic modulation at the four topographic hotspots (Figure~1b).
+At the CP, the SST trend [XX: increases/decreases] by [XX]~$^{\circ}$C per decade relative to the circumpolar mean; at the PAR, the anomaly is [XX]~$^{\circ}$C per decade; at the SEIR, [XX]~$^{\circ}$C per decade; and at the SWIR, [XX]~$^{\circ}$C per decade.
+These departures from the along-ACC mean are spatially coherent and align with the positions of the standing meanders identified from satellite altimetry, rather than occurring at random longitudes.
+
+
+\subsection{Meander-Scale SST Trend Patterns}
+
+Zoomed SST trend maps at each of the four meander sites reveal structured patterns that co-vary with the meander geometry (Figure~2).
+At the CP, the strongest SST trend anomaly is located [XX: downstream/upstream] of the plateau, coinciding with the region of maximum EKE increase documented in \citeA{liu2024characteristics}.
+At the PAR, [XX: describe the spatial pattern and how it relates to the ridge-controlled meander structure from Liu et al. 2026].
+The SEIR and SWIR sites exhibit [XX: describe their patterns].
+In all four cases, the time-mean meander position (overlaid as a black curve in Figure~2) delineates a boundary between regions of contrasting SST trends, suggesting that the frontal structure itself modulates the surface temperature response.
+
+
+\subsection{Statistical Comparison of Meander and Control SST Trends}
+
+The distributions of per-grid-point SST trends within meander envelopes and control regions differ significantly (Figure~3a).
+The mean SST trend across all meander grid points is [XX]~$^{\circ}$C per decade, compared with [XX]~$^{\circ}$C per decade in the control regions, a difference of [XX]~$^{\circ}$C per decade.
+A two-sample Kolmogorov-Smirnov test rejects the null hypothesis that meander and control SST trend distributions are drawn from the same population ($D = [XX]$, $p < [XX]$).
+
+Per-grid-point EKE trends and SST trends at meander sites show a [XX: positive/negative] spatial correlation (Figure~3b), with $R^{2} = [XX]$ across all meander grid points.
+The relationship is strongest at the [XX] site ($R^{2} = [XX]$) and weakest at the [XX] site ($R^{2} = [XX]$), consistent with the different dynamical responses of plateau-controlled versus ridge-controlled meanders \cite{liu2026standing}.
+
+
+\subsection{Sensitivity Tests}
+
+The above results are robust to the choice of SST product: repeating the analysis with NOAA OISST v2.1 yields qualitatively identical patterns, with [XX: summary of sensitivity test results] (Figure~S[XX]).
+Decadal decomposition into three sub-periods (1993--2005, 2006--2015, 2016--2025) shows that the meander--control SST trend contrast [XX: strengthens/weakens/remains stable] across decades (Figure~S[XX]), suggesting that the signal is [XX: robust/emerging/transient].
+
+
+
+
+
+%% ========================================================================
+%% DISCUSSION
+%% ========================================================================
+\section{Discussion}
+
+Our results provide the first observational evidence that the spatial pattern of Southern Ocean SST trends is modulated at the scale of individual ACC standing meanders.
+This finding bridges two previously disconnected literature threads: the documentation of multi-decadal structural trends at ACC standing meanders \cite{liu2024characteristics, liu2026standing} and the identification of eddy-mediated heat transport as the mechanism underlying Southern Ocean cooling \cite{morrison2016mechanisms, kang2026km}.
+
+
+The [XX: direction of the meander SST anomaly---cooling or warming] at standing meander sites is consistent with the [XX: mechanism---enhanced upwelling driving surface cooling / enhanced poleward eddy heat flux driving localised warming].
+\citeA{meijer2022dynamics} and \citeA{meijer2025deep} have shown that ageostrophic divergence within standing meanders drives vertical circulation that transports heat vertically through the water column via cyclogenesis.
+Our surface SST observations are consistent with this dynamical framework: the regions where \citeA{meijer2025deep} predict the strongest vertical motion due to curvature-driven divergence correspond to the locations where we observe the most anomalous SST trends.
+We emphasise, however, that our analysis diagnoses patterns, not processes: the dynamical mechanisms linking meander structural evolution to SST trends require the momentum and vorticity diagnostics that are the subject of forthcoming work.
+
+The spatial co-variation of EKE trends and SST trends at meander sites ($R^{2} = [XX]$) supports the eddy-saturation framework \cite{munday2013eddy, constantinou2019eddy, stewart2023eddy}, in which intensified winds steepen isopycnals and energise eddies that limit the mean transport response.
+Our observations suggest that this framework has a thermodynamic counterpart: the enhanced eddy activity at standing meanders not only constrains transport but also shapes the surface temperature field.
+The spatial correlation between EKE trends and SST trends is consistent with the mechanism identified in the ICON simulation by \citeA{kang2026km}, where resolved eddies reduce poleward heat flux and contribute to surface cooling.
+
+
+The concentration of SST trend anomalies at topographic hotspots has implications for understanding the persistent warm SST bias in CMIP6 models.
+\citeA{luo2023origins} showed that CMIP6 warm biases are zonally non-uniform and concentrated precisely at standing meander sites---the same locations where we find distinctive observed SST trends.
+If models fail specifically at these locations because they do not resolve the eddies that modulate surface temperature, then targeted improvements to eddy parameterisations at topographic hotspots could yield disproportionate gains in model fidelity.
+
+
+We acknowledge several limitations.
+The analysis uses surface-observable SST and does not quantify cross-frontal heat flux, which requires subsurface data that is beyond the scope of this study.
+The 32-year satellite record, while the longest available, may capture a mix of forced trends and multidecadal internal variability.
+Future work combining these observational constraints with eddy-resolving model output will be essential for isolating the forced component.
+
+
+%% ========================================================================
+%% CONCLUSIONS
+%% ========================================================================
+\section{Conclusions}
+
+Using 32 years of co-located satellite altimetry and SST observations, we have shown that SST trends at ACC standing meander sites differ systematically from those in quiescent ACC sections.
+The key findings are as follows.
+
+(1)~A circumpolar transect of SST trends along the ACC axis reveals systematic modulation at the four major topographic hotspots, with [XX: cooling/warming] anomalies of [XX]~$^{\circ}$C per decade relative to the circumpolar mean.
+
+(2)~SST trend distributions within meander envelopes are statistically distinct from those in control regions ($p < [XX]$), confirming that the warming hole has fine structure dictated by ACC--topography interaction.
+
+(3)~Per-grid-point EKE trends and SST trends co-vary spatially at meander sites ($R^{2} = [XX]$), consistent with the eddy-mediated cooling mechanism identified in km-scale climate simulations \cite{kang2026km}.
+
+These results provide the first meander-scale observational benchmark for eddy-resolving climate models and reframe the Southern Ocean warming hole as a spatially structured phenomenon whose architecture is governed by the evolving dynamics of ACC standing meanders at topographic hotspots.
+
+
+%% FIGURE CAPTIONS
+%% (Figures will be generated from the Phase 4 figure scripts)
+
+% Figure 1: Circumpolar SST trend map and along-ACC transect
+% Figure 2: Meander-site zoom panels co-locating SST and EKE trends
+% Figure 3: Meander vs. control statistical comparison
+% Figure 4: Synthesis schematic (optional, depending on figure count)
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acronyms
+%% NOTE that acronyms in the final published version will be spelled out when used in figure captions.
+\begin{acronyms}
+
+\acro{ACC}
+Antarctic Circumpolar Current
+
+\acro{ADT}
+Absolute Dynamic Topography
+
+\acro{CMEMS}
+Copernicus Marine Environment Monitoring Service
+
+\acro{CMIP}
+Coupled Model Intercomparison Project
+
+\acro{CP}
+Campbell Plateau
+
+\acro{ECMWF}
+European Centre for Medium-Range Weather Forecasts
+
+\acro{EKE}
+Eddy Kinetic Energy
+
+\acro{ERA5}
+ECMWF Reanalysis v5
+
+\acro{ICON}
+Icosahedral Nonhydrostatic model
+
+\acro{OSTIA}
+Operational SST and Ice Analysis
+
+\acro{PAR}
+Pacific-Antarctic Ridge
+
+\acro{SEIR}
+Southeast Indian Ridge
+
+\acro{SST}
+Sea Surface Temperature
+
+\acro{SWIR}
+Southwest Indian Ridge
+
+\end{acronyms}
+
+
+
+%% ========================================================================
+%% DATA AND SOFTWARE AVAILABILITY
+%% ========================================================================
+\section*{Data and Software Availability Statements}
+
+All the observational and reanalysis data and code used in this study are publicly available:
+1. Global Ocean Gridded L 4 Sea Surface Heights And Derived Variables Reprocessed 1993 Ongoing (DT-2024; 0.125$^{\circ}$): \url{https://doi.org/10.48670/moi-00148} (last access: April 2026);
+2. CMEMS OSTIA Sea Surface Temperature Reprocessed (0.05$^{\circ}$): \url{https://doi.org/10.48670/moi-00168} (last access: April 2026);
+3. Global Multi-Resolution Topography: \url{https://www.gmrt.org/services/gridserverinfo.php#!/services/getGMRTGrid} (last access: April 2026);
+4. ERA5 Reanalysis zonal and meridional wind speeds: \url{https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download} (last access: April 2026);
+5. Argo datasets: \url{https://sio-argo.ucsd.edu/RG/} (last access: April 2026).
+6. Software: Python 3 and Jupyter Notebook are publicly available. Key packages: xarray, numpy, scipy, matplotlib, cartopy, pymannkendall.
+7. All the Python and Jupyter Notebook scripts used to perform the diagnostics and generate the figures are archived on Zenodo: \url{} (\citeA{liu2026_meander_sst_code}; last access: April 2026).
+
+
+
+\section*{Conflict of Interest Declaration}
+
+The author declare there are no conflicts of interest for this manuscript.
+
+
+
+\acknowledgments
+
+XL acknowledges support from the University of Tasmania.
+XL is grateful to his PhD supervisors, Associate Professor Stuart P. Corney, Professor Petra Heil, Dr. Rachel L. Tilling and Dr. Alexander D. Fraser, for their guidance and support throughout his candidature.
+% CMEMS product
+This study has been conducted using E.U. Copernicus Marine Service Information.
+% Argo product
+The Argo data were collected and made freely available by the International Argo Program and the national programs that contribute to it (\url{https://argo.ucsd.edu}, \url{https://www.ocean-ops.org}). The Argo Program is part of the Global Ocean Observing System.
+% NCI
+Computational resources were provided by the Australian National Computational Infrastructure (NCI) at the Australian National University (ANU), which is supported by the Commonwealth of Australia.
+% UTAS open access
+Open access publishing facilitated by University of Tasmania, as part of the Wiley - University of Tasmania agreement via the Council of Australian University Librarians.
+
+
+
+
+%% ========================================================================
+%% BIBLIOGRAPHY
+%% ========================================================================
+\bibliography{reference}
+
+
+
+
+\end{document}

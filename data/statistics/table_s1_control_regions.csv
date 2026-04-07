@@ -1,0 +1,5 @@
+Region ID,Name,Longitude range,Latitude range,Grid points,Selection rationale
+CTRL_SE_PAC,Southeast Pacific,100°W–80°W,60°S–48°S,15360,Flat seafloor between PAR and Drake Passage; no major topographic features
+CTRL_S_IND,Central South Indian,90°E–110°E,56°S–44°S,15360,Quiescent ACC section between Kerguelen and SEIR meanders
+CTRL_S_ATL,South Atlantic,10°W–10°E,58°S–44°S,17920,Flat abyssal plain south of the Mid-Atlantic Ridge; minimal topographic interaction
+CTRL_CP_SEIR,CP–SEIR gap,180°–165°W,57°S–46°S,10560,Transition zone between Campbell Plateau and Southeast Indian Ridge meanders

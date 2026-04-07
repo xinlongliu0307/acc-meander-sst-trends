@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N spatial_eke
+#PBS -P gv90
+#PBS -q normal
+#PBS -l walltime=16:00:00
+#PBS -l mem=16GB
+#PBS -l ncpus=1
+#PBS -l storage=gdata/gv90
+#PBS -l wd
+#PBS -o spatial_eke.out
+#PBS -e spatial_eke.err
+
+module purge
+unset PYTHONPATH
+source /g/data/gv90/xl1657/venvs/cmems_py311/bin/activate
+cd /g/data/gv90/xl1657/cmems_adt/notebooks/
+python NB03b_spatial_eke.py

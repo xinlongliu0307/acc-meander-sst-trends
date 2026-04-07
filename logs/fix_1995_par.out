@@ -1,0 +1,93 @@
+======================================================================
+NB14: Fix 1995 + PAR Transect + Recompute All Phase 1 Results
+======================================================================
+
+--- Step 1: Regrid 1995 ---
+  Loading cmems_ostia_sst_so30S_1995.nc...
+    ERROR: [Errno -101] NetCDF: HDF error: '/g/data/gv90/xl1657/cmems_sst/cmems_ostia_sst_so30S_1995.nc'
+  WARNING: 1995 regridding failed. Proceeding with 32 years.
+  Regridded files available: 32
+
+--- Step 2: Load SST ---
+
+Loading regridded SST data...
+  WARNING: sst_monthly_0125deg_1995.nc not found!
+  Loaded: 380 months from 32 years
+
+--- Step 3: Compute SST trends ---
+
+Computing per-grid-point SST trends...
+    Row 40/481 (0s, 0 computed)
+    Row 80/481 (1s, 0 computed)
+    Row 120/481 (138s, 13851 computed)
+    Row 160/481 (591s, 60132 computed)
+    Row 200/481 (1515s, 150051 computed)
+    Row 240/481 (2721s, 264902 computed)
+    Row 280/481 (3910s, 380020 computed)
+    Row 320/481 (5066s, 493796 computed)
+    Row 360/481 (6193s, 606270 computed)
+    Row 400/481 (7282s, 717395 computed)
+    Row 440/481 (8335s, 825113 computed)
+    Row 480/481 (9284s, 922248 computed)
+  Computed: 922248, Skipped: 463032
+  Significant: 508895
+  Time: 154.7 min
+  Saved: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/sst_trends/sst_trend_map.nc
+
+--- Step 4: Regional statistics ---
+
+Extracting regional statistics...
+  CP: mean=+0.2109 °C/dec, sig=82.7%
+  PAR: mean=+0.0050 °C/dec, sig=11.3%
+  SEIR: mean=+0.1520 °C/dec, sig=72.0%
+  SWIR: mean=+0.0657 °C/dec, sig=24.0%
+  CTRL_SE_PAC: mean=+0.0055 °C/dec, sig=3.1%
+  CTRL_S_IND: mean=+0.1634 °C/dec, sig=86.1%
+  CTRL_S_ATL: mean=+0.1924 °C/dec, sig=99.0%
+  CTRL_CP_SEIR: mean=+0.2944 °C/dec, sig=98.1%
+
+  MEANDER mean: +0.1084, CONTROL mean: +0.1639, Diff: -0.0555
+
+--- Step 5: KS test ---
+
+KS test...
+  Meander: n=85696, mean=+0.1007
+  Control: n=59200, mean=+0.1520
+  D=0.1928, p=0.00e+00
+
+--- Step 6: SST-EKE correlation ---
+
+SST-EKE correlation...
+  CP: R=+0.104, R²=0.011, p=0.00e+00
+  PAR: R=-0.081, R²=0.007, p=0.00e+00
+  SEIR: R=-0.020, R²=0.000, p=3.15e-02
+  SWIR: R=-0.034, R²=0.001, p=3.50e-05
+
+--- Step 7: Along-ACC transect (FIXED) ---
+
+Computing along-ACC transect (FIXED longitude handling)...
+  Saved transect.
+  Circumpolar mean: +0.0988 °C/dec
+  Valid transect points: 2879 / 2880
+  CP: mean=+0.2078 °C/dec, anomaly=+0.1091 °C/dec, n_valid=479
+  PAR: mean=-0.0241 °C/dec, anomaly=-0.1228 °C/dec, n_valid=560
+  SEIR: mean=+0.1371 °C/dec, anomaly=+0.0383 °C/dec, n_valid=176
+  SWIR: mean=-0.0482 °C/dec, anomaly=-0.1470 °C/dec, n_valid=240
+  Saved site anomalies CSV.
+
+======================================================================
+NB14 complete. All Phase 1 outputs updated.
+Output: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/sst_trends
+======================================================================
+
+======================================================================================
+                  Resource Usage on 2026-04-06 13:14:55:
+   Job Id:             164843585.gadi-pbs
+   Project:            gv90
+   Exit Status:        0
+   Service Units:      41.46
+   NCPUs Requested:    1                   CPU Time Used: 02:35:09        
+   Memory Requested:   32.0GB                Memory Used: 7.11GB          
+   Walltime Requested: 06:00:00            Walltime Used: 02:35:29        
+   JobFS Requested:    100.0MB                JobFS Used: 0B              
+======================================================================================

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Large raw data files (not tracked; download via scripts)
+# Raw CMEMS OSTIA SST files (~5.9 GB each, 33 files)
+data/raw/*.nc
+
+# Monthly EKE cubes (large intermediate products; regenerable from scripts)
+data/eke_monthly/spatial_eke_*_monthly.nc
+
+# Regridded SST files (regenerable from NB12)
+data/sst_regridded/*.nc
+
+# Temporary and intermediate files
+*.nc.tmp
+*.nc.*[a-z]*
+nohup.out
+download_nohup.log
+
+# PBS job output (tracked in logs/ directory, not root)
+*.o[0-9]*
+*.e[0-9]*

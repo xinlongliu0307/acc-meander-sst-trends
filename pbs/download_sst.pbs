@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -N download_sst
+#PBS -P gv90
+#PBS -q copyq
+#PBS -l walltime=10:00:00
+#PBS -l mem=8GB
+#PBS -l ncpus=1
+#PBS -l storage=gdata/gv90
+#PBS -l wd
+#PBS -o download_sst.out
+#PBS -e download_sst.err
+
+module purge
+unset PYTHONPATH
+source /g/data/gv90/xl1657/venvs/cmems_py311/bin/activate
+cd /g/data/gv90/xl1657/cmems_adt/notebooks/
+python download_cmems_sst.py

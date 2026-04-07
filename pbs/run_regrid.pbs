@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N regrid_sst
+#PBS -P gv90
+#PBS -q normal
+#PBS -l walltime=06:00:00
+#PBS -l mem=32GB
+#PBS -l ncpus=1
+#PBS -l storage=gdata/gv90
+#PBS -o /g/data/gv90/xl1657/cmems_adt/notebooks/regrid_sst.out
+#PBS -e /g/data/gv90/xl1657/cmems_adt/notebooks/regrid_sst.err
+
+module purge
+unset PYTHONPATH
+source /g/data/gv90/xl1657/venvs/cmems_py311/bin/activate
+cd /g/data/gv90/xl1657/cmems_adt/notebooks/
+python NB12_regrid_sst.py

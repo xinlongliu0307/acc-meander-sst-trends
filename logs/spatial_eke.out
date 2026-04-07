@@ -1,0 +1,123 @@
+======================================================================
+NB03b: Spatial EKE Computation for Meander SST Project
+  Source: /g/data/gv90/xl1657/cmems_adt/cmems_so30S_19930101_20250802_adt_sla_ugos_vgos_batch.nc
+  Output: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial
+======================================================================
+  Sites to process: ['CP', 'PAR', 'SEIR', 'SWIR']
+
+======================================================================
+Computing spatial EKE: Campbell Plateau (CP)
+======================================================================
+  Grid: 88 lat × 480 lon = 42240 points
+  Pass 1: Accumulating monthly means (11902 days)...
+    Day 3000/11902 (240s)
+    Day 6000/11902 (544s)
+    Day 9000/11902 (754s)
+  Pass 2: Computing monthly climatology...
+  Pass 3: Computing spatial EKE fields...
+  EKE computed in 16.0 min
+  EKE cube shape: (392, 88, 480)
+  EKE range: 0.000000–0.553331 m²/s²
+  Saved monthly EKE: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_CP_monthly.nc (51 MB)
+  Computing per-grid-point EKE trends (Sen's slope + MK)...
+    Row 20/88 (87s)
+    Row 40/88 (175s)
+    Row 60/88 (264s)
+    Row 80/88 (353s)
+  Trends computed at 42240 / 42240 grid points
+  Significant (p<0.05): 10989 grid points
+  Saved trend map: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_CP_trend.nc
+
+  CP complete in 22.5 minutes.
+
+======================================================================
+Computing spatial EKE: Pacific-Antarctic Ridge (PAR)
+======================================================================
+  Grid: 96 lat × 560 lon = 53760 points
+  Pass 1: Accumulating monthly means (11902 days)...
+    Day 3000/11902 (101s)
+    Day 6000/11902 (201s)
+    Day 9000/11902 (292s)
+  Pass 2: Computing monthly climatology...
+  Pass 3: Computing spatial EKE fields...
+  EKE computed in 6.3 min
+  EKE cube shape: (392, 96, 560)
+  EKE range: 0.000000–0.708892 m²/s²
+  Saved monthly EKE: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_PAR_monthly.nc (64 MB)
+  Computing per-grid-point EKE trends (Sen's slope + MK)...
+    Row 20/96 (103s)
+    Row 40/96 (205s)
+    Row 60/96 (308s)
+    Row 80/96 (411s)
+  Trends computed at 53760 / 53760 grid points
+  Significant (p<0.05): 17885 grid points
+  Saved trend map: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_PAR_trend.nc
+
+  PAR complete in 14.6 minutes.
+
+======================================================================
+Computing spatial EKE: Southeast Indian Ridge (SEIR)
+======================================================================
+  Grid: 96 lat × 176 lon = 16896 points
+  Pass 1: Accumulating monthly means (11902 days)...
+    Day 3000/11902 (104s)
+    Day 6000/11902 (202s)
+    Day 9000/11902 (291s)
+  Pass 2: Computing monthly climatology...
+  Pass 3: Computing spatial EKE fields...
+  EKE computed in 6.2 min
+  EKE cube shape: (392, 96, 176)
+  EKE range: 0.000000–0.720088 m²/s²
+  Saved monthly EKE: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_SEIR_monthly.nc (20 MB)
+  Computing per-grid-point EKE trends (Sen's slope + MK)...
+    Row 20/96 (32s)
+    Row 40/96 (65s)
+    Row 60/96 (97s)
+    Row 80/96 (129s)
+  Trends computed at 16896 / 16896 grid points
+  Significant (p<0.05): 3460 grid points
+  Saved trend map: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_SEIR_trend.nc
+
+  SEIR complete in 8.8 minutes.
+
+======================================================================
+Computing spatial EKE: Southwest Indian Ridge (SWIR)
+======================================================================
+  Grid: 112 lat × 240 lon = 26880 points
+  Pass 1: Accumulating monthly means (11902 days)...
+    Day 3000/11902 (99s)
+    Day 6000/11902 (198s)
+    Day 9000/11902 (288s)
+  Pass 2: Computing monthly climatology...
+  Pass 3: Computing spatial EKE fields...
+  EKE computed in 6.2 min
+  EKE cube shape: (392, 112, 240)
+  EKE range: 0.000000–0.536424 m²/s²
+  Saved monthly EKE: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_SWIR_monthly.nc (32 MB)
+  Computing per-grid-point EKE trends (Sen's slope + MK)...
+    Row 20/112 (44s)
+    Row 40/112 (88s)
+    Row 60/112 (132s)
+    Row 80/112 (177s)
+    Row 100/112 (221s)
+  Trends computed at 26880 / 26880 grid points
+  Significant (p<0.05): 5216 grid points
+  Saved trend map: /g/data/gv90/xl1657/cmems_adt/meander_sst_project/eke_spatial/spatial_eke_SWIR_trend.nc
+
+  SWIR complete in 10.4 minutes.
+
+======================================================================
+All sites complete.
+======================================================================
+
+======================================================================================
+                  Resource Usage on 2026-04-03 22:10:11:
+   Job Id:             164652319.gadi-pbs
+   Project:            gv90
+   Exit Status:        0
+   Service Units:      7.72
+   NCPUs Requested:    1                   CPU Time Used: 00:52:28        
+   Memory Requested:   16.0GB                Memory Used: 16.0GB          
+   Walltime Requested: 16:00:00            Walltime Used: 00:57:54        
+   JobFS Requested:    100.0MB                JobFS Used: 0B              
+======================================================================================

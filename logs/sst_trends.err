@@ -1,0 +1,6 @@
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:99: RuntimeWarning: invalid value encountered in sqrt
+  z = (s - 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/venvs/cmems_py311/lib64/python3.11/site-packages/pymannkendall/pymannkendall.py:103: RuntimeWarning: invalid value encountered in sqrt
+  z = (s + 1)/np.sqrt(var_s)
+/g/data/gv90/xl1657/cmems_adt/notebooks/NB13_sst_trends.py:535: RuntimeWarning: Mean of empty slice
+  site_mean = np.nanmean(transect_trend[mask])

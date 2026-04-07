@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N sst_trends
+#PBS -P gv90
+#PBS -q normal
+#PBS -l walltime=10:00:00
+#PBS -l mem=32GB
+#PBS -l ncpus=1
+#PBS -l storage=gdata/gv90
+#PBS -o /g/data/gv90/xl1657/cmems_adt/notebooks/sst_trends.out
+#PBS -e /g/data/gv90/xl1657/cmems_adt/notebooks/sst_trends.err
+
+module purge
+unset PYTHONPATH
+source /g/data/gv90/xl1657/venvs/cmems_py311/bin/activate
+cd /g/data/gv90/xl1657/cmems_adt/notebooks/
+python NB13_sst_trends.py
