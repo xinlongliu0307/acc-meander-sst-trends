@@ -7,7 +7,7 @@
 
 Python analysis scripts and derived data products for the manuscript:
 
-> **Liu, X.** (2026). Topographic Hotspots Shape the Spatial Pattern of Southern Ocean SST Trends: Satellite Evidence from ACC Standing Meanders. *Geophysical Research Letters*.
+> **Liu, X.** (2026). Topographic Hotspots Shape the Spatial Pattern of Southern Ocean SST Trends: Satellite Evidence from ACC Standing Meanders. *Submitted to Geophysical Research Letters*.
 
 This study co-locates 33 years (1993–2025) of satellite sea surface temperature (SST) trends with structural trends of Antarctic Circumpolar Current (ACC) standing meanders at four major topographic hotspots. We demonstrate that SST trends at meander sites differ significantly from quiescent ACC sections, with meander sites warming 0.047 °C per decade less than control regions (*D* = 0.181, *p* < 0.001).
 
@@ -122,7 +122,7 @@ The analysis proceeds in the following order:
 
 - Python 3.11+
 - Key packages: `xarray`, `numpy`, `scipy`, `matplotlib`, `cartopy`, `pymannkendall`, `statsmodels`, `pandas`
-- NCI Gadi account with access to project `gv90` (for PBS job submission)
+- NCI Gadi account (for PBS job submission)
 - `copernicusmarine` CLI tool (for SST data download)
 
 ## Installation
