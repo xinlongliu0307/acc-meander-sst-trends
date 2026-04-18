@@ -7,7 +7,7 @@
 
 Python analysis scripts and derived data products for the manuscript:
 
-> **Liu, X.** (2026). Topographic Hotspots Shape the Spatial Pattern of Southern Ocean SST Trends: Satellite Evidence from ACC Standing Meanders. *Submitted to Geophysical Research Letters*.
+> **Liu, X.** (2026). Topographic Hotspots Shape the Spatial Pattern of Southern Ocean SST Trends: Satellite Evidence from ACC Standing Meanders, 2026.
 
 This study co-locates 33 years (1993–2025) of satellite sea surface temperature (SST) trends with structural trends of Antarctic Circumpolar Current (ACC) standing meanders at four major topographic hotspots. We demonstrate that SST trends at meander sites differ significantly from quiescent ACC sections, with meander sites warming 0.047 °C per decade less than control regions (*D* = 0.181, *p* < 0.001).
 
@@ -149,7 +149,6 @@ If you use these scripts or data products, please cite:
 @article{liu2026meander_sst,
   title={Topographic Hotspots Shape the Spatial Pattern of Southern Ocean SST Trends: Satellite Evidence from ACC Standing Meanders},
   author={Liu, Xinlong},
-  journal={Geophysical Research Letters},
   year={2026},
   publisher={Wiley Online Library}
 }
